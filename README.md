@@ -9,4 +9,3 @@ Interested in:
  - add hashes to the ignore list
  - load moar when no more loading and we've wrap around (instead of after 50 clicks)
  - something that makes initial surfing more fun, without hammering projects
- - something not completely absurd to look at
