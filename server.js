@@ -40,5 +40,5 @@ app.get('/likes', function (request, response) {
 
 // listen for requests :)
 app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + this.address().port);
+  console.log(`✨🚀 Your node ${process.version} app is listening on port ${this.address().port} ✨🚀`);
 });
