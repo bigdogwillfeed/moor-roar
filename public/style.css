@@ -56,34 +56,66 @@ img#tv {
   z-index: 10;
 }
 
-button#channel {
+button {
   border: transparent;
   background-color: transparent;
   position: absolute;
   border-radius: 50%;
   height: 14vw;
   width: 14vw;
-  top: 7vw;
-  right: 6vw;
   cursor: pointer;
 }
 
-button#channel:hover {
+button:hover {
   background-color: rgba(0,0,0,0.1)
 }
-button#disabled {
+button.disabled {
   background-color: rgba(0,0,0,0.2)
 }
 
+button#channel {
+  top: 7vw;
+  right: 5.5vw;
+}
+
+button#info {
+  top: 22.5vw;
+  right: 5.5vw;
+}
+
 div#title {
-    position: absolute;
-    top: 5vw;
-    right: 1vw;
-    font-size: 1.6vw;
-    font-weight: bold;
-    color: pink;
-    width: 23vw;
-    text-align: center;
-    background: black;
+  position: absolute;
+  top: 5vw;
+  right: 1vw;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: pink;
+  width: 23vw;
+  text-align: center;
+  background: black;
   cursor: pointer;
+}
+
+div#info-pane {
+  right: 4vw;
+  position: absolute;
+  background-color: white;
+  width: 17vw;
+  max-height: 13vw;
+  overflow-y: auto;
+}
+
+#info-pane ul {
+  padding: 0px;
+  margin-left: 1em;
+  list-style-type: none;
+}
+#info-pane ul ul {
+  list-style-type: '┗ ';
+}
+#info-pane li {
+  cursor: pointer;
+}
+#info-pane li:hover {
+  background-color: gainsboro;
 }
